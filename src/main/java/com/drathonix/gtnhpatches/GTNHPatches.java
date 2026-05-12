@@ -10,13 +10,19 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = GTNHPatches.MODID, version = Tags.VERSION, name = "Drathon's GTNH Patches", acceptedMinecraftVersions = "[1.7.10]")
+@Mod(
+    modid = GTNHPatches.MODID,
+    version = Tags.VERSION,
+    name = "Drathon's GTNH Patches",
+    acceptedMinecraftVersions = "[1.7.10]")
 public class GTNHPatches {
 
     public static final String MODID = "dgtnhpatches";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.drathonix.gtnhpatches.ClientProxy", serverSide = "com.drathonix.gtnhpatches.CommonProxy")
+    @SidedProxy(
+        clientSide = "com.drathonix.gtnhpatches.ClientProxy",
+        serverSide = "com.drathonix.gtnhpatches.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

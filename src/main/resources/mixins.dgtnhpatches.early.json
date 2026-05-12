@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8.5-GTNH",
-  "package": "com.drathonix.gtnhpatches.mixin",
-  "refmap": "mixins.deconfigintegration.refmap.json",
+  "package": "com.drathonix.gtnhpatches.mixin.early",
+  "refmap": "mixins.dgtnhpatches.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [],

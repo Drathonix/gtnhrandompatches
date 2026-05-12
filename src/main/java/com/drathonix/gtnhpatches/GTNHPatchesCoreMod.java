@@ -1,24 +1,26 @@
 package com.drathonix.gtnhpatches;
 
-import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
+
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+
 @IFMLLoadingPlugin.MCVersion("1.7.10")
 public class GTNHPatchesCoreMod implements IFMLLoadingPlugin, IEarlyMixinLoader {
+
     @Override
     public String getMixinConfig() {
-        return "mixins.deconfigintegration.json";
+        return "mixins.dgtnhpatches.early.json";
     }
 
     @Override
     public List<String> getMixins(Set<String> loadedCoreMods) {
         List<String> mixins = new ArrayList<>();
-        mixins.add("early.ChunkMixin");
+        mixins.add("ChunkMixin");
         return mixins;
     }
 
