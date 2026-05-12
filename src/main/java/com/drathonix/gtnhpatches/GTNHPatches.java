@@ -14,7 +14,8 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
     modid = GTNHPatches.MODID,
     version = Tags.VERSION,
     name = "Drathon's GTNH Patches",
-    acceptedMinecraftVersions = "[1.7.10]")
+    acceptedMinecraftVersions = "[1.7.10]",
+    acceptableRemoteVersions = "*")
 public class GTNHPatches {
 
     public static final String MODID = "dgtnhpatches";
