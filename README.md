@@ -6,3 +6,4 @@ Config file is dgtnhpatches.cfg
 
 ### Patches
 1. Automatic removal of entities whose position is in one chunk but is added to another causing unnecessary log spam. Typically, these are just projectiles so removing them is harmless. No idea how this happens. You can modify what entities are affected in the config file (default is vanilla arrows and TiC Bolts)
+2. Disabling of forestry mutations that depend on an IRL date and time. This is just objectively bad game design as it can be bypassed by changing the date of your server/computer.
