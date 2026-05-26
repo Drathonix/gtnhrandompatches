@@ -17,7 +17,7 @@ import forestry.core.genetics.mutations.MutationConditionTimeLimited;
 @Mixin(MutationConditionTimeLimited.class)
 public class MixinMutationConditionTimeLimited {
 
-    @Inject(method = "getChance", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "getChance", at = @At("HEAD"), cancellable = true, remap = false)
     public void disableIRLDateLimitations(World world, int x, int y, int z, IAllele allele0, IAllele allele1,
         IGenome genome0, IGenome genome1, IClimateProvider climate, CallbackInfoReturnable<Float> cir) {
         if (Config.disableIRLDateLimitationsOnForestryMutations) cir.setReturnValue(1.0F);
